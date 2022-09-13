@@ -68,6 +68,7 @@ require("./Routes/auth.route")(app)
 require("./Routes/user.route")(app)
 //require("./Routes/patient.route")(app)
 require("./Routes/appointment.route")(app)
+require("./Routes/preset.route")(app)
 
 
 app.get("/", (req, res) => {

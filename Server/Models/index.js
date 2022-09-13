@@ -11,6 +11,7 @@ db.role = require("./role.model")(mongoose)
 //db.patient = require("./patient.model")(mongoose)
 db.user = require("./user.model")(mongoose)
 db.appointment = require("./appointment.model")(mongoose)
+db.preset = require("./preset.model")(mongoose)
 
 db.ROLES = ["frontdest", "admin", "doctor"];
 
