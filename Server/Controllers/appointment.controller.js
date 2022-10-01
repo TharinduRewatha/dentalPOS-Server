@@ -250,8 +250,8 @@ exports.appointmentRevenue = (req, res) => {
         .then((data) => {
             data.forEach(revenue => {
                 console.log(revenue)
-                // console.log("A revenue of " + revenue.amount + "has happened in " + revenue.brandName)
-                // revenueCount[revenue.brandName] = revenueCount[revenue.brandName] ? revenueCount[revenue.brandName] + revenue.discPrice * revenue.qty : revenue.discPrice * revenue.qty
+                 console.log("A revenue of " + revenue.amount + "has happened in " + revenue.brandName)
+                 revenueCount[revenue.appointment] = revenueCount[revenue.appointment] ? revenueCount[revenue.appointment] + revenue.amount * 1 : revenue.amount * 1
 
             })
             res.send(revenueCount)
